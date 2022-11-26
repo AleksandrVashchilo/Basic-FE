@@ -1,7 +1,42 @@
-table, tr td th{
-    border-collapse: collapse;
+table, tr, td, th{
     border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    width: 500px;
 }
-.grey{
-    background-color: lightblue;
+th{
+    background-color: rgba(255, 0, 0, 0.438);
+    color: white;
+    text-transform: uppercase;
+}
+tr:nth-child(2n+3) td:first-child{
+    background-color: blueviolet;
+    color: white;
+    text-transform: uppercase;
+}
+tr:nth-child(2n+4) td:first-child{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+tr:nth-child(2n+3) td:nth-child(2){
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+tr:nth-child(2n+4) td:nth-child(2){
+    background-color: blueviolet;
+    color: white;
+    text-transform: uppercase;
+}
+body{
+    background-image: url('img/dog.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 20% 20%;
+    background-position: 50% 100%;
+}
+html{
+    scroll-behavior: smooth;
 }
